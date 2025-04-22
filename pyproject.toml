@@ -1,0 +1,80 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "src"
+version = "0.0.1"
+description = "A short description of the project."
+authors = [
+  { name = "Isaac Menchaca" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+dependencies = [
+    "accelerate",
+    "anthropic",
+    "awscli",
+    "beautifulsoup4",
+    "bitsandbytes",
+    "chromadb",
+    "datasets",
+    "faiss-cpu",
+    "feedparser",
+    "gensim",
+    "google-generativeai",
+    "gradio",
+    "ipython",
+    "ipywidgets",
+    "jupyter-dash",
+    "jupyterlab",
+    "langchain",
+    "langchain-openai",
+    "langchain_chroma",
+    "langchain_experimental",
+    "langchain",
+    "matplotlib",
+    "mkdocs",
+    "modal",
+    "numpy",
+    "ollama",
+    "openai",
+    "pandas",
+    "pip",
+    "plotly",
+    "psutil",
+    "pytest",
+    "python-dotenv",
+    "requests",
+    "ruff",
+    "scikit-learn",
+    "scipy",
+    "sentence_transformers",
+    "sentencepiece",
+    "setuptools",
+    "speedtest-cli",
+    "tiktoken",
+    "torch",
+    "transformers",
+    "tqdm",
+    "unstructured",
+]
+requires-python = "~=3.13.0"
+
+
+[tool.ruff]
+line-length = 99
+src = ["src"]
+include = ["pyproject.toml", "src/**/*.py", "notebook/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["src", "notebook"]
+force-sort-within-sections = true
+
