@@ -16,52 +16,13 @@ classifiers = [
     "License :: OSI Approved :: MIT License"
 ]
 dependencies = [
-    "accelerate",
-    "anthropic",
-    "awscli",
-    "beautifulsoup4",
-    "bitsandbytes",
-    "chromadb",
-    "datasets",
-    "faiss-cpu",
-    "feedparser",
-    "gensim",
-    "google-generativeai",
-    "gradio",
-    "ipython",
-    "ipywidgets",
-    "jupyter-dash",
-    "jupyterlab",
-    "langchain",
-    "langchain-openai",
-    "langchain_chroma",
-    "langchain_experimental",
-    "langchain",
-    "matplotlib",
-    "mkdocs",
-    "modal",
-    "numpy",
-    "ollama",
-    "openai",
-    "pandas",
     "pip",
-    "plotly",
-    "psutil",
-    "pytest",
-    "python-dotenv",
+    "awscli",
     "requests",
-    "ruff",
-    "scikit-learn",
-    "scipy",
-    "sentence_transformers",
-    "sentencepiece",
-    "setuptools",
-    "speedtest-cli",
-    "tiktoken",
-    "torch",
-    "transformers",
-    "tqdm",
-    "unstructured",
+    "dotenv",
+    "bs4",
+    "openai",
+    "ipykernel",
 ]
 requires-python = "~=3.13.0"
 
@@ -69,7 +30,7 @@ requires-python = "~=3.13.0"
 [tool.ruff]
 line-length = 99
 src = ["src"]
-include = ["pyproject.toml", "src/**/*.py", "notebook/**/*.py"]
+include = ["pyproject.toml", "src/**/*.py", "notebook/**/*.ipynb"]
 
 [tool.ruff.lint]
 extend-select = ["I"]  # Add import sorting
