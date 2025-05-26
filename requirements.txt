@@ -8,3 +8,8 @@ ipykernel
 tensorflow
 numpy
 transformers
+langchain-text-splitters 
+langchain-community 
+langgraph
+langchain_aws
+faiss-cpu
